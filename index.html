@@ -1,92 +1,29 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge" />
-        <title>Javascript project</title>
-        <meta name="description" content="" />
-        <meta name="viewport" content="width=device-width, intial-scale=1" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
-        <link rel="stylesheet" type="text/css" href="styles.css" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript project</title>
+      <link rel="stylesheet" type="text/css" href="styles.css" />
    </head>
    <body>
-       <div>
-       <h1><strong>AKAN NAMES</strong></h1>
-       </div>
-       <div>
-         <h2>Introduction</h2>
-         <p>The Akan is small group in Ghana.Akan names are derived from Ghananian culture.Frequently in Ghana, children are given their first names as a 'day name' which corresponds to the day in the week they were born. 
-             Therefore,most people know their birth dates but they dont know the specific day. Fortunately there are ways to know the specific day using the dates.Fill in your name, date of birth in the form below so as to now your Akan Name:
-         </p>
-       </div>
-       <div class="row ghanaian-names">
-        <div class="col-md-6">
-          <h4 class="ffemale">Female</h4>
-          <ul class="fs11">
-            <li>Sunday: Akosua</li>
-            <li>Monday: Adwoa</li>
-            <li>Tuesday: Abenaa</li>
-            <li>Wednesday: Akua</li>
-            <li>Thursday: Yaa</li>
-            <li>Friday: Afua</li>
-            <li>Saturday: Ama</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <h4 class="fmale">Male</h4>
-          <ul class="fs11">
-            <li>Sunday: Kwasi</li>
-            <li>Monday: Kwadwo</li>
-            <li>Tuesday: Kwabena</li>
-            <li>Wednesday: Kwaku</li>
-            <li>Thursday: Yaw</li>
-            <li>Friday: Kofi</li>
-            <li>Saturday: Kwame</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-sm-6">
-    <h2 class="h2"><strong>About Me Details</strong></h2>
-    <div class="radio radio-default">
-      <label for="Name">Name</label>
-      <input text="radio" id="Name" placeholder="Name">
-    </div>
-    <div class="form-group">
-      <form class="form" onsubmit="findNames()">
-        <label for="date" class="input-group">Date of Birth:</label>
-        <input type="date" class="form-control mb-2 mr-sm-2" placeholder="mm/dd/yyyy" id="myBirthDate" name="date" autocomplete="off">
-    </div>
-    <label class="label">Gender</label>
-    <div class="rdio rdio-default">
-      <input type="radio" name="gender" id="male" value="Male">
-      <label for="male">Male</label>
-    </div>
-    <div class="rdio rdio-default">
-      <input type="radio" name="gender" value="Female" id="female">
-      <label for="female">Female</label>
-    </div>
-    <br>
-    <br>
-    <button type="button" class="btn btn-primary mb-2" onclick="findNames()">Submit</button>
-    <div class="output">
-      <p id="message"></p>
-    </div>
-   
+<form name="dataForm" id="dForm" class="InputForm" onsubmit="return allFunctions()">
+  <p>Please enter yoyr date of birth</p>
+  <div id="inputErr"></div>
+  Date: <input type="text" name ="day" value="" id="day" class="inputs" placeholder="Day" maxlength="2">
+  Month: <input type="text" name ="month" value="" id="month" class="inputs" placeholder=Month" maxlength="2">
+  Date: <input type="text" name ="year" value="" id="year" class="inputs" placeholder="Year" maxlength="4">
+  
+  <input type="radio" name ="gender" value="male" id="male" class="gnd" > Male </br>
+  <input type="radio" name ="gender" value="female" id="female" > Female </br>
+  <div id="genderErr"></div>
 
+  <button type="submit" name="submit" value="submit" id="btn">Submit</button>
+  <button type="reset" name="submit" value="submit" id="btn">Reset</button>
 
-<div class="jumbotron text-center" style="margin-bottom:20px text-align:center">
-<p>Site created by Cyrian Norah.
-  Copyright(c)2020.All rights reserved.
-  P.O BOX:343456,Mombasa,Kenya.
-</p>
-</div>
-<script src="js/jquery-3.4.1.js"></script>
+</form>
+
 <script src="js/scripts.js"></script>
-<script src="js/jquery.maskedinput.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-
 </body>
 
 </html>

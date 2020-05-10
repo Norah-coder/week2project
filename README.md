@@ -18,7 +18,7 @@ Technologies Used:
 HTML and CSS.
 JAVASCRIPT
 Support and contact details:
-You can contact the founder anytime incase of any enquiries through email:cyrianmkangoma9 9@gmail.com
+You can contact the founder anytime incase of any enquiries through email:cyrianmkangoma99@gmail.com
 
 License:
 lincense Copyright (c)2020.All rights reserved. P.o Box: 343456,Mombasa,Kenya.
